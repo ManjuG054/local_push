@@ -1,0 +1,12 @@
+<header class="header">
+    <nav class="navbar">
+        <ul class="navbar__list">
+            <li *ngFor="let item of ['home', 'about', 'contact']" routerLinkActive="active-link">
+                <a [routerLink]="['/', item]">{{ item | pascalCase }}</a>
+            </li>
+        </ul>
+    </nav>
+    <figure class="figure">
+        <img src="assets/images/user.png" alt="figure__image" />
+    </figure>
+</header>
