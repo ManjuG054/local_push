@@ -3,6 +3,11 @@
         @content;
     }
 }
+@mixin for-smaller-phone {
+    @media (max-width: 375px) {
+        @content;
+    }
+}
 
 .main {
     width: 100vw;
@@ -39,6 +44,10 @@
                     @include for-phone() {
                         text-align: center;
                     }
+
+                    @include for-smaller-phone() {
+                        font-size: 2rem;
+                    }
                 }
                 .sub-title {
                     font-size: 1.5rem;
@@ -70,6 +79,10 @@
                             width: 70px;
                             height: auto;
                             object-fit: contain;
+
+                            @include for-smaller-phone() {
+                                width: 58px;
+                            }
                         }
 
                         @include for-phone() {
@@ -98,6 +111,10 @@
 
                 @include for-phone() {
                     width: 368px;
+                }
+
+                @include for-smaller-phone() {
+                    width: 366px;
                 }
             }
             .blob-bg {
