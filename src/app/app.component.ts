@@ -6,7 +6,6 @@ import { firebaseConfig } from "environments/environment";
 @Component({
     selector: "gv-root",
     templateUrl: "./app.component.html",
-    styles: [],
 })
 export class AppComponent {
     title = "angular12";

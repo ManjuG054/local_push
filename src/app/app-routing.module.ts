@@ -1,16 +1,15 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
+import { LandingPageComponent } from "./components/landing-page/landing-page.component";
 
 const routes: Routes = [
     {
         path: "",
-        // loadChildren: "./single-page-application/single-page-application.module#SinglePageApplicationModule",
-        loadChildren: () => import("./single-page-application/single-page-application.module").then((m) => m.SinglePageApplicationModule),
+        component: LandingPageComponent,
     },
     {
         path: "**",
-        redirectTo: "404",
-        pathMatch: "full",
+        redirectTo: "",
     },
 ];
 
