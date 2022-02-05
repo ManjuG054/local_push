@@ -1,0 +1,28 @@
+@mixin for-phone {
+    @media (max-width: 599px) {
+        @content;
+    }
+}
+
+@mixin for-smaller-phone {
+    @media (max-width: 440px) {
+        @content;
+    }
+}
+
+.main {
+    overflow: hidden;
+    section {
+        width: 100vw;
+        height: 90vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        .intro {
+        }
+
+        .about {
+        }
+    }
+}
