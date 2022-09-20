@@ -1,0 +1,18 @@
+<section class="intro">
+    <div class="intro-wrapper">
+        <article class="intro-wrapper__labels">
+            <h1 class="title">Hello, I'm Govindaraju</h1>
+            <h3 class="sub-title">Software Engineer (Angular 7+)</h3>
+        </article>
+        <div class="skills">
+            <ul>
+                <li *ngFor="let images of skilsImg">
+                    <img src="{{ skilsImgPath }}/{{ images.img }}" [alt]="images.alt" [title]="images.alt" />
+                </li>
+            </ul>
+        </div>
+    </div>
+    <figure class="intro__visuals">
+        <img class="intro__image" src="assets/images/hero/admin.png" alt="admin-image" />
+    </figure>
+</section>
