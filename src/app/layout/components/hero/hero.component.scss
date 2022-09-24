@@ -116,11 +116,11 @@ $sub-heading-color: #747474;
             filter: saturate(0.2);
 
             @include for-phone() {
-                width: 368px;
+                width: 330px;
             }
 
             @include for-smaller-phone() {
-                width: 366px;
+                width: 325px;
             }
         }
         .blob-bg {
