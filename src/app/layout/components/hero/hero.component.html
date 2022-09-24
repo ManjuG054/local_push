@@ -7,12 +7,12 @@
         <div class="skills">
             <ul>
                 <li *ngFor="let images of skilsImg">
-                    <img src="{{ skilsImgPath }}/{{ images.img }}" [alt]="images.alt" [title]="images.alt" />
+                    <img src="{{ skilsImgPath }}/{{ images.img }}" [alt]="images.alt" [title]="images.alt" loading="lazy" />
                 </li>
             </ul>
         </div>
     </div>
-    <figure class="intro__visuals">
-        <img class="intro__image" src="assets/images/hero/admin.png" alt="admin-image" />
+    <figure class="intro__visuals" tilte="Govindaraju C">
+        <img class="intro__image" [src]="heroImage" alt="admin-image" loading="lazy" />
     </figure>
 </section>
